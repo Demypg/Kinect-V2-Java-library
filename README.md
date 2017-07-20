@@ -51,7 +51,7 @@ this.lib.startKinect(@"Sitting.gbd", @"configExample.xml");
 
 //Get the event handler from the library
 this.EventHandler = lib.eventHandler;
-//Get the CoordinateMapper from the Kinect from the GestureLibrary if needed to calculate 3D 
+//Get the CoordinateMapper from the Kinect from the GestureLibrary if needed to calculate 3D camera depth space
 //this.CoordinateMapper = lib.CoordinateMapper;
  ```
 
