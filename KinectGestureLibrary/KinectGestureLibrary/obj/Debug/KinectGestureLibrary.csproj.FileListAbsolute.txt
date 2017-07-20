@@ -1,0 +1,9 @@
+C:\Users\Demy\Documents\thebestone\KinectGestureLibrary\KinectGestureLibrary\bin\Debug\KinectGestureLibrary.dll
+C:\Users\Demy\Documents\thebestone\KinectGestureLibrary\KinectGestureLibrary\bin\Debug\KinectGestureLibrary.pdb
+C:\Users\Demy\Documents\thebestone\KinectGestureLibrary\KinectGestureLibrary\bin\Debug\Microsoft.Kinect.dll
+C:\Users\Demy\Documents\thebestone\KinectGestureLibrary\KinectGestureLibrary\bin\Debug\Microsoft.Kinect.VisualGestureBuilder.dll
+C:\Users\Demy\Documents\thebestone\KinectGestureLibrary\KinectGestureLibrary\bin\Debug\Microsoft.Kinect.xml
+C:\Users\Demy\Documents\thebestone\KinectGestureLibrary\KinectGestureLibrary\bin\Debug\Microsoft.Kinect.VisualGestureBuilder.xml
+C:\Users\Demy\Documents\thebestone\KinectGestureLibrary\KinectGestureLibrary\obj\Debug\KinectGestureLibrary.csprojResolveAssemblyReference.cache
+C:\Users\Demy\Documents\thebestone\KinectGestureLibrary\KinectGestureLibrary\obj\Debug\KinectGestureLibrary.dll
+C:\Users\Demy\Documents\thebestone\KinectGestureLibrary\KinectGestureLibrary\obj\Debug\KinectGestureLibrary.pdb
