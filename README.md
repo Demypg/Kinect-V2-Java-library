@@ -1,18 +1,27 @@
 # Kinect-V2-Java-library
-A universal library that could be used in both C# and Java
+A universal library that could be used in both C# and Java to connect to a Microsoft Kinect v2.
+Not to be confused with the first generation kinect that was rereleased for Windows computers, this project uses the newest Kinect released in 2013, also known as [Kinect for XBOX one](http://www.xbox.com/en-US/xbox-one/accessories/kinect). 
 
-# Project Title
+This library was a result of a bachelor thesis conducted at NTNU Ålesund where the requirements were to make a library that could be loaded in Java and handle gesture-data from a Kinect v2. Current features of the library are:
 
-Kinect V2 Java library
+- Fully setup connection with a Kinect v2
+- Load a gesture database that has been build with Visual Gesture Builder (.gbd files)
+- Interface event system for Java software
+- Delegate event system for C# software
+- An external configuration file for setup of gestures from the gesture database.
 
 ## Getting Started
 
-These instructions will get you a copy of the project up and running on your local machine for development and testing purposes. See deployment for notes on how to deploy the project on a live system.
+Clone the repo and build the project "kinectLibrary" in Visual Studio. More in the section "installing".
 
 ### Prerequisites
 
-- Visual studio 2015 or newer
+- Kinect V2, setup at [KinectV2 Setup](http://support.xbox.com/en-US/xbox-on-windows/accessories/kinect-for-windows-v2-setup)
+- [Kinect SDK 2.0](https://www.microsoft.com/en-us/download/details.aspx?id=44561)
+- Visual studio IDE 2015 or newer at [Visual studio](https://www.visualstudio.com/)
 - JNI4net, can be found at [JNI4net](https://github.com/jni4net/jni4net)
+- [Netbeans IDE](https://netbeans.org/) (or any other Java IDE of your choice) 
+
 
 ### Installing
 
@@ -69,7 +78,7 @@ Please read [CONTRIBUTING.md](https://gist.github.com/PurpleBooth/b24679402957c6
 ## Authors
 
 * **Demy Gielesen** - *Lead coder of library*
-* **Malén Barstad** - *Lead coder of GUI(not included in this repo) and advisor* 
+* **Malén Barstad** - *Lead coder of GUI and testing databases(not included in this repo)* 
 
 ## License
 
