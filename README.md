@@ -14,8 +14,6 @@ This library was a result of a bachelor thesis conducted at NTNU Ålesund where 
 
 ## Getting Started
 
-Clone the repo and build the solution "KinectGestureLibrary" in Visual Studio. More in the section "installing".
-
 ### Prerequisites
 
 - Kinect V2, setup at [KinectV2 Setup](http://support.xbox.com/en-US/xbox-on-windows/accessories/kinect-for-windows-v2-setup)
@@ -44,10 +42,10 @@ Example on how to include the library in C#:
 ```
 // Start main class of the GestureLibrary
 this.lib = new GestureLibMain();
-//start the kinect()
-this.lib.startKinect(@"Sitting.gbd", @"configExample.xml");
+//start the kinect, args: (database location +  name, config location + name)
+this.lib.startKinect(@"ExampleGestureDatabase.gbd", @"configExample.xml");
 //Or without a config file:
-//this.lib.startKinect(@"Sitting.gbd");
+//this.lib.startKinect(@"ExampleGestureDatabase.gbd");
 
 //Get the event handler from the library
 this.EventHandler = lib.eventHandler;
@@ -62,16 +60,24 @@ Library setup for use in Java:
 4. Done! The Java library has been generated and placed in the /JNI4NET/Build_library/final_result. Read further on the JNI4net wiki on how to implement this type of library or check out the example Java project in the /Java folder.
 
 Configuration setup:
+The config file is used to define 3 things:
+- Defining the buffer size for the Average filter
+- Defining which gestures should be linked (example: a gesture that can be performed with both left and right hand can be combined as a single gesture)
+- Defining which gestures should be ignored from the database (beta or buggy gestures)
 
+The average filter withholds a set off frames coming from the Kinect and then calculates an average value for all confidence values. This means that if the AverageFilterBufferSize is set to 10, the library will wait untill it receives 10 frames from the Kinect before it calculates the confidence values and calls an event. As the Kinect runs on 30 FPS, a setting of 10 would mean that a total of 3 gesture events get triggered each second.
 
 ## FAQ 
 Q: Will this repo be updated by the authors?
+
 A: Most likely not, the project was uploaded so that other people could take advantadge of premade code for the kinect V2.
 
 Q: Can I contact you about further questions?
+
 A: You can contact me at [Demy Gielesen](mailto:demy.gielesen@outlook.com)
 
 Q: Are you going to add more questions to this list?
+
 A: If I come up with more, yes.
 
 ## Contributing
